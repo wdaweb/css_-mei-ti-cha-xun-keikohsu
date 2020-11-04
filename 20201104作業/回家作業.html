@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        position: relative;
+        transition: 1s;
+      }
+      img {
+        width: 50%;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .center {
+        text-align: center;
+      }
+     
+   
+
+      /* 職訓局 */
+      @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .box {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .box {
+          width: 95%;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 150px;
+          z-index: 33;
+        }
+      }
+      /* HTML */
+
+      @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxHTML {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxHTML {
+          width: 40%;
+          position: absolute;
+          top: 60px;
+          right: 970px;
+        }
+        .lineHTML{
+            position: absolute;
+           top: 330px;
+           right: 600px;
+           transform: rotate(10deg);
+           width: 50%;
+          border:1px solid #DDD;
+        }
+        
+      }
+      /* css */
+
+      @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxCSS {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxCSS {
+          width: 40%;
+          position: absolute;
+          top: 10px;
+          right: 600px;
+          
+        }
+        .lineCSS{
+            position: absolute;
+           top: 150px;
+           right: 520px;
+           transform: rotate(25deg);
+           width: 20%;
+          border:1px solid #DDD;
+        }
+        p{
+          display: none;
+        }
+      }
+
+        /* JS */
+
+        @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxJS {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxJS {
+          width: 40%;
+          position: absolute;
+          top: 400px;
+          right: 800px;
+        }
+        .lineJS{
+            position: absolute;
+           top: 500px;
+           right: 600px;
+           transform: rotate(-15deg);
+           width: 30%;
+          border:1px solid #DDD;
+        }
+      }
+            /* JQ */
+
+            @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxJQ {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxJQ{
+          width: 40%;
+          position: absolute;
+          top: 650px;
+          right: 600px;
+        }
+        .lineJQ{
+            position: absolute;
+           top: 50px;
+           right: -40px;
+           transform: rotate(-30deg);
+           width: 30%;
+          border:1px solid #DDD;
+        }
+      }
+
+/* Bootstrap*/
+
+@media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxBootstrap {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxBootstrap{
+          width: 40%;
+          position: absolute;
+          top: 10px;
+          left: 700px;
+          
+        }
+        .lineB{
+            position: absolute;
+           top: 150px;
+           left: -150px;
+           transform: rotate(-25deg);
+           width: 70%;
+          border:1px solid #DDD;
+        }
+      }
+/* Sass  */
+      @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxSass {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxSass{
+          width: 40%;
+          position: absolute;
+          top: 300px;
+          left: 900px;
+        }
+        .lineSass{
+            position: absolute;
+           top: 90px;
+           right: 300px;
+           transform: rotate(180deg);
+           width: 100%;
+          border:1px solid #DDD;
+        }
+      }
+      /* Vue */
+      @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxVue {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxVue{
+          width: 40%;
+          position: absolute;
+          top: 660px;
+          left: 700px;
+        }
+        .lineV{
+            position: absolute;
+           top: -20px;
+           right: 250px;
+           transform: rotate(30deg);
+           width: 60%;
+          border:1px solid #DDD;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+          
+        <div class="box center">
+          <img src="./職訓.png" />
+          <h1>泰山職訓局</h1>
+          <span>
+            提供完整的課程規劃、專業的實務訓練，貼心<br />
+            的就業輔導與諮詢服務，以達成本分署「人盡其才<br />
+            才盡其用　適才適所」的機關願景。
+            </span>
+      
+        </div>
+      </div>
+      <div class="row">
+        <div class="boxHTML center">
+          <img src="./HTML.png"/>
+          
+          <h1>Html</h1>
+          <p>HTML是一種網頁使用的語言，是一種描述超文件<br />
+            的註記語言SGML(Standard Generalized Markup <br />
+            Language)所制訂出的一種網頁語言，基本上現行的<br />
+            瀏覽器都可以讀取HTML，使用HTML可以編輯設計出網<br />
+            頁，也可以在網頁中加入所有HTML語言可支援的方式<br />
+            ，例如表格、表單、圖片、文字、連結、程式等等。</p>
+        </div>
+        <div class="lineHTML"></div>
+      </div>
+
+      <div class="row">
+        <div class="boxCSS center">
+          <img src="./CSS.png"/>
+          <h1>CSS3</h1>
+          <p>CSS（Cascading Style Sheets）串接樣式表：一<br />
+            種用來為結構化文件（如HTML文件或XML應用）添加樣<br />
+            式（字型、間距和顏色等）的電腦語言，由W3C定義和<br />
+            維護，意指在文件中CSS不會單獨存在，只是輔助結構<br />
+            化文件的樣式呈現。</p>
+        </div>
+        <div class="lineCSS"></div>
+      </div>
+
+      <div class="row">
+        <div class="boxJS center">
+          <img src="./JS.png" />
+          <h1>JavaScript</h1>
+          <p>JavaScript（通常縮寫為JS）是一種進階的、直譯的<br />
+            程式語言。JavaScript是一門基於原型、函式先行的語<br />
+            言，是一門多範式的語言，它支援物件導向程式設計，<br />
+            指令式程式設計，以及函式語言程式設計。</p>
+        </div>
+        <div class="lineJS"></div>
+      </div>
+      <div class="row">
+        <div class="boxJQ center">
+          <img src="./JQ.png" />
+          <h1>jQuery</h1>
+          <p>jQuery是一套跨瀏覽器的JavaScript函式庫，簡化HTML<br />
+            與JavaScript之間的操作。[1]由約翰·雷西格（John Resig）<br />
+            在2006年1月的BarCamp NYC上釋出第一個版本。目前由Dave <br />
+            Methvin領導的團隊進行開發。</p>
+          <div class="lineJQ"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="boxBootstrap center">
+          <img src="./Bootstrap.png" />
+          <h1>Bootstrap</h1>
+          
+          <p>Bootstrap 是一個由HTML、CSS 和JavaScript 寫成的前端<br />
+            框架，核心的設計目標是達成RWD響應式與行動優先，也就是讓<br />
+            你的網站排版可以自動適應螢幕大小。 它預先做好一套網站的<br />
+            基礎建設，讓你能在框架的基礎上進行開發，不需要再去煩惱瑣<br />
+            碎的設定。</p>
+          <div class="lineB"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="boxSass center">
+          <img src="./Sass.png" />
+          <h1>Sass</h1>
+          <p>sass是一種基於css所產生的高階語言，他將一般程式語言所擁<br />
+            有邏輯概念和變數帶入css樣式表中，讓我們在撰寫網站的樣式時<br />
+            ，可以用更快速、更方便的方式撰寫。</p>
+          <div class="lineSass"></div>
+        </div>
+        <div class="boxVue center">
+            <img src="./vue.png" />
+            <h1>Vue.js</h1>
+            <p>Vue.js是一款流行的JavaScript前端框架，旨在更好地組織與<br />
+              簡化Web開發。 Vue所關注的核心是MVC模式中的視圖層，同時，<br />
+              它也能方便地取得資料更新，並通過組件內部特定的方法實現視圖<br />
+              與模型的互動。</p>
+            <div class="lineV"></div>
+          </div>
+
+      </div>
+    </div>
+  </body>
+</html>
