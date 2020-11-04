@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 100%;
+        margin: auto;
+        padding: 10px;
+        position: relative;
+        transition: 1s;
+      }
+      img {
+        width: 50%;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .center {
+        text-align: center;
+      }
+     
+   
+
+      /* 職訓局 */
+      @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .box {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .box {
+          width: 95%;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 150px;
+          z-index: 33;
+        }
+      }
+      /* HTML */
+
+      @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxHTML {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxHTML {
+          width: 40%;
+          position: absolute;
+          top: 60px;
+          right: 970px;
+        }
+        .lineHTML{
+            position: absolute;
+           top: 330px;
+           right: 600px;
+           transform: rotate(10deg);
+           width: 50%;
+          border:1px solid #DDD;
+        }
+        
+      }
+      /* css */
+
+      @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxCSS {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxCSS {
+          width: 40%;
+          position: absolute;
+          top: 10px;
+          right: 600px;
+          
+        }
+        .lineCSS{
+            position: absolute;
+           top: 150px;
+           right: 520px;
+           transform: rotate(25deg);
+           width: 20%;
+          border:1px solid #DDD;
+        }
+      }
+
+        /* JS */
+
+        @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxJS {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxJS {
+          width: 40%;
+          position: absolute;
+          top: 400px;
+          right: 800px;
+        }
+        .lineJS{
+            position: absolute;
+           top: 500px;
+           right: 600px;
+           transform: rotate(-15deg);
+           width: 30%;
+          border:1px solid #DDD;
+        }
+      }
+            /* JQ */
+
+            @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxJQ {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxJQ{
+          width: 40%;
+          position: absolute;
+          top: 650px;
+          right: 600px;
+        }
+        .lineJQ{
+            position: absolute;
+           top: 50px;
+           right: -40px;
+           transform: rotate(-30deg);
+           width: 30%;
+          border:1px solid #DDD;
+        }
+      }
+
+/* Bootstrap*/
+
+@media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxBootstrap {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxBootstrap{
+          width: 40%;
+          position: absolute;
+          top: 10px;
+          left: 700px;
+          
+        }
+        .lineB{
+            position: absolute;
+           top: 150px;
+           left: -150px;
+           transform: rotate(-25deg);
+           width: 70%;
+          border:1px solid #DDD;
+        }
+      }
+/* Sass  */
+      @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxSass {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxSass{
+          width: 40%;
+          position: absolute;
+          top: 300px;
+          left: 900px;
+        }
+        .lineSass{
+            position: absolute;
+           top: 90px;
+           right: 300px;
+           transform: rotate(180deg);
+           width: 100%;
+          border:1px solid #DDD;
+        }
+      }
+      /* Vue */
+      @media (min-width: 576px) {
+        .container {
+          width: 95%;
+        }
+        .boxVue {
+          width: 95%;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          width: 40%;
+        }
+        .boxVue{
+          width: 40%;
+          position: absolute;
+          top: 600px;
+          left: 700px;
+        }
+        .lineV{
+            position: absolute;
+           top: -20px;
+           right: 250px;
+           transform: rotate(30deg);
+           width: 60%;
+          border:1px solid #DDD;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+          
+        <div class="box center">
+          <img src="./職訓.png" />
+          <h1>泰山職訓局</h1>
+          <p>
+            提供完整的課程規劃、專業的實務訓練，貼心<br />
+            的就業輔導與諮詢服務，以達成本分署「人盡其才<br />
+            才盡其用　適才適所」的機關願景。
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="boxHTML center">
+          <img src="./HTML.png"/>
+          
+          <h1>Html</h1>
+          <p></p>
+        </div>
+        <div class="lineHTML"></div>
+      </div>
+
+      <div class="row">
+        <div class="boxCSS center">
+          <img src="./CSS.png"/>
+          <h1>CSS3</h1>
+          <p></p>
+        </div>
+        <div class="lineCSS"></div>
+      </div>
+
+      <div class="row">
+        <div class="boxJS center">
+          <img src="./JS.png" />
+          <h1>JavaScript</h1>
+          <p></p>
+        </div>
+        <div class="lineJS"></div>
+      </div>
+      <div class="row">
+        <div class="boxJQ center">
+          <img src="./JQ.png" />
+          <h1>jQuery</h1>
+          <p></p>
+          <div class="lineJQ"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="boxBootstrap center">
+          <img src="./Bootstrap.png" />
+          <h1>Bootstrap</h1>
+          
+          <p></p>
+          <div class="lineB"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="boxSass center">
+          <img src="./Sass.png" />
+          <h1>Sass</h1>
+          <p></p>
+          <div class="lineSass"></div>
+        </div>
+        <div class="boxVue center">
+            <img src="./vue.png" />
+            <h1>Vue.js</h1>
+            <p></p>
+            <div class="lineV"></div>
+          </div>
+
+      </div>
+    </div>
+  </body>
+</html>
